@@ -1,5 +1,5 @@
 #forest2 {
-    background: url(forest.jpg) center center fixed;
+    background: url(forest3.jpg) center center fixed;
     background-size: cover;
     text-align: center;
     padding: 300px 0;
@@ -8,4 +8,9 @@
 #responsible {
     font-size: 100%;
     font-style: oblique;
+}
+
+#body {
+    background-color: #343a40;
+    color: #f7f7f7
 }
