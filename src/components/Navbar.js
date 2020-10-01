@@ -5,7 +5,7 @@ function Navbar() {
     return <div>
         <section id="forest2">
         </section>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="concrete">
             <div className="container">
                 <a className="navbar-brand" id="smartree">Smartree</a>
                 <a className="navbar-brand" id="responsible">Responsible forestry for the modern era</a>

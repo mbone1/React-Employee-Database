@@ -5,7 +5,7 @@ import img1 from "../assets/img1.png"
 function Search() {
 
 
-    return <div className="col-2">
+    return <div className="col-xl-2 p-4">
 
         <img className="card-img-top" id='port' src={img1} alt="tree" />
         <div className="form-group">

@@ -14,3 +14,7 @@
     height: 275px;
     width: 275px
 }
+
+#concrete {
+    background-image: url(./assets/backgrounds/concretebk.jpg);
+}
