@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import './style.css';
 import Navbar from './components/Navbar';
+import Search from './components/Search';
 
 
 
 function App() {
 
-  return <Navbar></Navbar>
-
+  return <div><Navbar />
+    <Search />
+  </div>
 
       }
 
