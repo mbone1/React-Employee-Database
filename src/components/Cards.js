@@ -1,19 +1,22 @@
 import React from "react";
 import "../style.css"
 
-function Cards() {
-    return <div class="card bg-secondary m-3">
-        <div class="card-body">
-            <img class="card-img-top" id='port' src="./assets/employeeImages/115998598_2357698611200565_1039705896486553082_o.jpg" alt="Card image cap" />
-            <h5 class="card-title">Bingus Taylor</h5>
-            <p class="card-text">Role : Treeman</p>
-            <p class="card-text">Email : bTaylor@gmail.com</p>
 
+function Cards(props) {
+    console.log(props.image)
+    return <div className="card bg-secondary m-3">
+        <div className="card-body">
+            <img className="card-img-top" alt={props.name} id='port' src={props.image} alt={props.name} />
+            <h5 className="card-title text-center">{props.name}</h5>
+            <p className="card-text">{props.occupation}</p>
+            <p className="card-text">{props.email}</p>
+            <p className="card-text">{props.phone}</p>
         </div>
     </div>
-
-
-
 }
-
 export default Cards;
+
+
+
+
+

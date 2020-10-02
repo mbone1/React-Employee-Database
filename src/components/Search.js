@@ -9,7 +9,7 @@ function Search() {
 
         <img className="card-img-top" id='port' src={img1} alt="tree" />
         <div className="form-group">
-            <label for="searchName">Search by name</label>
+            <label htmlFor="searchName">Search by name</label>
             <input type="name" className="form-control" id="searchName" aria-describedby="searchName" placeholder="Paula Targus" />
 
         </div>

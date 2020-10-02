@@ -17,4 +17,5 @@
 
 #concrete {
     background-image: url(./assets/backgrounds/concretebk.jpg);
+    background: transparent;
 }

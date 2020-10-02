@@ -2,10 +2,10 @@ import React from "react";
 import "../style.css"
 
 function Navbar() {
-    return <div>
+    return <>
         <section id="forest2">
         </section>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="concrete">
+        <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="concrete">
             <div className="container">
                 <a className="navbar-brand" id="smartree">Smartree</a>
                 <a className="navbar-brand" id="responsible">Responsible forestry for the modern era</a>
@@ -29,7 +29,7 @@ function Navbar() {
                 </div>
             </div>
         </nav>
-    </div >
+    </>
 }
 
 export default Navbar;
