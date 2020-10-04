@@ -20,7 +20,7 @@ class Search extends Component {
           className="form-control"
           id="searchName"
           aria-describedby="searchName"
-          placeholder="Begin typing to filter"
+          placeholder="Type here to search"
           onChange={this.filterUpdate.bind(this)}
         />
       </div>

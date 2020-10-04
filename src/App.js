@@ -11,26 +11,25 @@ import WaterersBtn from "./components/WaterersBtn";
 
 
 class App extends Component {
-
   // state = {
   //   Employees,
   //   Search
   // };
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       filterText: "",
+      treeMen: "Treeman",
     };
   }
 
   filterUpdate(value) {
     this.setState({
-      filterText: value
-    })
+      filterText: value,
+    });
   }
-  
+
   render() {
-    
     return (
       <>
         <Navbar />
@@ -42,12 +41,12 @@ class App extends Component {
                 filterText={this.state.filterText}
                 filterUpdate={this.filterUpdate.bind(this)}
               />
+              <small id="emailHelp" className="form-text text-muted">
+                Click a button below to filter by role.
+              </small>
               <TreemenBtn />
               <TreeSpeakerBtn />
               <WaterersBtn />
-              <small id="emailHelp" className="form-text text-muted">
-                Click a button to filter by role.
-              </small>
             </div>
             <div class="col-xl-10 p-4">
               <div class="row">
@@ -62,7 +61,6 @@ class App extends Component {
         </div>
       </>
     );
-
   }
 }
 
