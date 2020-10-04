@@ -209,8 +209,4 @@ const Employees =
     }
     ]
 
-function imageLoader() {
-    return Employees;
-}
-
 export default Employees;
