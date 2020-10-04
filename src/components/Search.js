@@ -14,11 +14,13 @@ class Search extends Component {
         <label htmlFor="searchName">Filter by name</label>
         <input
           type="name"
-          ref ={ (value) => {this.myValue= value}}
+          ref={(value) => {
+            this.myValue = value;
+          }}
           className="form-control"
           id="searchName"
           aria-describedby="searchName"
-          // placeholder="Start typing to search"
+          placeholder="Begin typing to filter"
           onChange={this.filterUpdate.bind(this)}
         />
       </div>
