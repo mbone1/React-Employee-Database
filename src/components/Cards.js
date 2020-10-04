@@ -5,16 +5,20 @@ class Cards extends Component {
   render() {
     const { data, filterText } = this.props;
     const Cards = data
-      .filter((name) => {
+      .filter((employee) => {
         //remove names that do not match current filter text
-        return name.name.toLowerCase().indexOf(filterText.toLowerCase()) >= 0;
+        return (
+          (
+          employee.name.toLowerCase().indexOf(filterText.toLowerCase()) >= 0
+        )
+        );
       })
       .map((employee) => {
         return (
           <div className="card bg-secondary m-3">
             <div className="card-body">
-                    <img
-                        key={employee.id}
+              <img
+                key={employee.id}
                 className="card-img-top"
                 alt={employee.name}
                 id="port"
