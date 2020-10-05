@@ -11,11 +11,26 @@
 }
 
 #port {
-    height: 275px;
-    width: 275px
+    height: 150px;
+    width: 150px
 }
 
 #concrete {
     background-image: url(./assets/backgrounds/concretebk.jpg);
-    background: transparent;
+}
+
+table {
+    width: 100%
+}
+
+thead button.ascending::after {
+    content: '⇩ ⇩ ⇩';
+    display: inline-block;
+    margin-left: 1em;
+}
+
+thead button.descending::after {
+    content: ' ⇧ ⇧ ⇧';
+    display: inline-block;
+    margin-left: 1em;
 }

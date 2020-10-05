@@ -76,7 +76,7 @@ const Employees = [
     name: "Tilbo Tonka",
     image:
       "https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/s960x960/119944398_2401510603486032_451570424052340196_o.jpg?_nc_cat=108&_nc_sid=da1649&_nc_ohc=K3nJ7gcmhIgAX8JX-kV&_nc_ht=scontent.fphx1-1.fna&tp=7&oh=88dc59d8d9bce484a4c8a73fccc79c55&oe=5F9CCE46",
-    occupation: "CEO",
+    occupation: "Technician",
     email: "spaghettiwoman@lycos.com",
     phone: "707-755-8385",
   },
@@ -85,9 +85,9 @@ const Employees = [
     name: "Spiffy Tangus",
     image:
       "https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/p960x960/120075185_2401296836840742_8336943012323112122_o.jpg?_nc_cat=105&_nc_sid=da1649&_nc_ohc=OQL9RY_sEB0AX-vW7DZ&_nc_ht=scontent.fphx1-2.fna&tp=6&oh=b44060cb42df146db4fe9014deba2c6a&oe=5F9D88D8",
-    occupation: "Technician",
+    occupation: "CEO",
     email: "sTangus@gmail.com",
-    phone: "6022589327",
+    phone: "602-258-9327",
   },
   {
     id: 11,

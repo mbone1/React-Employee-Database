@@ -7,7 +7,9 @@ import data from "./employees";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App data={data} />
+    
+      <App data={data} />
+      
   </React.StrictMode>,
   document.getElementById("root")
 );
