@@ -44,7 +44,7 @@ const useSortableData = (items, config = null) => {
 
 
 
-const ProductTable = (props) => {
+const EmployeeTable = (props) => {
   const { items, requestSort, sortConfig } = useSortableData(props.products);
   const getClassNamesFor = (name) => {
     if (!sortConfig) {
@@ -64,7 +64,9 @@ const ProductTable = (props) => {
             <button
               type="button"
               onClick={() => requestSort("name")}
-              className={getClassNamesFor("name")}>Sort</button>
+              className={getClassNamesFor("name")}>
+              Sort
+            </button>
           </th>
           <th scope="row">
             <span>Role </span>
@@ -73,7 +75,7 @@ const ProductTable = (props) => {
               onClick={() => requestSort("occupation")}
               className={getClassNamesFor("occupation")}>
               Sort
-              </button>
+            </button>
           </th>
           <th scope="row">
             <span>Email </span>
@@ -106,17 +108,16 @@ const ProductTable = (props) => {
   );
 };
 export default function App() {
-  return (<>
-    <Navbar />
-    <div className="container-fluid">
+  return (
+    <>
+      <Navbar />
+      <div className="container-fluid">
         <div class="col-xl-12 p-4">
-          
-      <ProductTable products={Employees} />
-   
-    </div>
-    </div>
+          <EmployeeTable products={Employees} />
+        </div>
+      </div>
     </>
-    );
+  );
   }
 
      
