@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 import Navbar from "./components/Navbar";
-import Cards from "./components/Cards";
-import img1 from "./assets/img1.png";
+
 
 import Employees from "./employees.js";
 
@@ -91,7 +90,7 @@ const EmployeeTable = (props) => {
         {items.map((employee) => (
           <tr key={employee.id}>
             <td>
-              <img id="port" src={employee.image}></img>{" "}
+              <img id="port" alt="employee" src={employee.image}></img>{" "}
             </td>
             <td>{employee.name}</td>
             <td>{employee.occupation}</td>
@@ -108,7 +107,7 @@ export default function App() {
     <>
       <Navbar />
       <div className="container-fluid">
-        <div class="col-xl-12 p-4">
+        <div className="col-xl-12 p-4">
           <EmployeeTable products={Employees} />
         </div>
       </div>
