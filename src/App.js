@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
-import './style.css';
-import Navbar from './components/Navbar';
-import Search from './components/Search';
-import Cards from './components/Cards';
-import img1 from './assets/img1.png'
+import React, { Component } from "react";
+import "./style.css";
+import Navbar from "./components/Navbar";
+import Cards from "./components/Cards";
+import img1 from "./assets/img1.png";
 
 import Employees from "./employees.js";
-
 
 const useSortableData = (items, config = null) => {
   const [sortConfig, setSortConfig] = React.useState(config);
@@ -41,8 +39,6 @@ const useSortableData = (items, config = null) => {
 
   return { items: sortedItems, requestSort, sortConfig };
 };
-
-
 
 const EmployeeTable = (props) => {
   const { items, requestSort, sortConfig } = useSortableData(props.products);
@@ -118,12 +114,173 @@ export default function App() {
       </div>
     </>
   );
-  }
+}
 
-     
-          
-     
-          
+
+
+
+
+
+
+
+
+
+
+
+// const useSortableData = (items, config = null) => {
+//   const [sortConfig, setSortConfig] = useState(config);
+  
+//   const sortedItems = React.useMemo(() => {
+//     let sortableItems = [...items];
+//     if (sortConfig !== null) {
+//       sortableItems.sort((a, b) => {
+//         if (a[sortConfig.key] < b[sortConfig.key]) {
+//           return sortConfig.direction === "ascending" ? -1 : 1;
+//         }
+//         if (a[sortConfig.key] > b[sortConfig.key]) {
+//           return sortConfig.direction === "ascending" ? 1 : -1;
+//         }
+//         return 0;
+//       });
+//     }
+//     return sortableItems;
+//   }, [items, sortConfig]);
+  
+//   const requestSort = (key) => {
+//     let direction = "ascending";
+//     if (
+//       sortConfig &&
+//       sortConfig.key === key &&
+//       sortConfig.direction === "ascending"
+//       ) {
+//         direction = "descending";
+//       }
+//       setSortConfig({ key, direction });
+//     };
+    
+//     return { items: sortedItems, requestSort, sortConfig };
+//   };
+  
+  
+  
+//   const EmployeeTable = (props) => {
+//     const { items, requestSort, sortConfig } = useSortableData(props.products);
+//     const [search, setInput] = useState("");
+
+//     const handleSubmit = (evt) => {
+//       evt.preventDefault();
+      
+//     }
+//     const getClassNamesFor = (name) => {
+//       if (!sortConfig) {
+//         return;
+//       }
+//       return sortConfig.key === name ? sortConfig.direction : undefined;
+//     };
+//     return (
+//       <>
+//       <form onSubmit={handleSubmit}>
+//         <label>
+//           Search Input
+//         </label>
+//         <input
+//           type="text"
+//           value={search}
+//           onChange={e => setInput(e.target.value)}
+//           />
+        
+//       <input type="submit" value="Submit" />
+//       </form >
+        
+//       <table className="table table-striped table-dark">
+//           <thead className="thead-dark">
+//             <tr>
+//               <th scope="row">
+//                 <span>Picture </span>
+//               </th>
+//               <th scope="row">
+//                 <span>Name </span>
+//                 <button
+//                   type="button"
+//                   onClick={() => requestSort("name")}
+//                   className={getClassNamesFor("name")}>
+//                   Sort
+//                 </button>
+//               </th>
+//               <th scope="row">
+//                 <span>Role </span>
+//                 <button
+//                   type="button"
+//                   onClick={() => requestSort("occupation")}
+//                   className={getClassNamesFor("occupation")}>
+//                   Sort
+//                 </button>
+//               </th>
+//               <th scope="row">
+//                 <span>Email </span>
+//                 <button
+//                   type="button"
+//                   onClick={() => requestSort("email")}
+//                   className={getClassNamesFor("email")}>
+//                   Sort
+//                 </button>
+//               </th>
+//               <th scope="row">
+//                 <span>Phone Number </span>
+//               </th>
+//             </tr>
+//           </thead>
+//           <tbody>
+//           {items
+//               //   .filter((employee) => {
+//               //   return (
+//               //     (employee.name.toLowercase().indexOf(search.toLowerCase())>= 0)
+//               //   )
+//               // })
+//             .map((employee) => (
+//                   <tr key={employee.id}>
+//                     <td>
+//                       <img id="port" src={employee.image}></img>{" "}
+//                     </td>
+//                     <td>{employee.name}</td>
+//                     <td>{employee.occupation}</td>
+//                     <td>{employee.email}</td>
+//                     <td>{employee.phone}</td>
+//                   </tr>
+//                 ))}
+//           </tbody>
+//         </table>
+//                 </>
+   
+//     );
+//   };
+// export default function App() {
+//   // const [searchTerm, setSearchTerm] = useState(config);
+//   // const [searchResults, setSearchResults] = useState(config);
+//   // const handleChange = event => {
+//   //   setSearch(event.target.value);
+//   // }
+
+//   // React.useEffect(() => {
+//   //   const results = Employees.filter()
+//   // })
+
+//   return (
+//     <>
+//       <Navbar />
+//       <div className="container-fluid">
+//         <div class="col-xl-12 p-4">
+//           <EmployeeTable products={Employees} />
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+
+
+
+
            
 
     
@@ -253,13 +410,11 @@ export default function App() {
 //               <small id="emailHelp" className="form-text text-muted">
 //                 Click a button below to filter by role.
 //               </small>
-//               <TreemenBtn />
-//               <TreeSpeakerBtn />
-//               <WaterersBtn />
+             
 //             </div>
 //             <div class="col-xl-10 p-4">
 //               <div class="row">
-//                    <Cards1 data={Employees} />
+//                    <Cards data={Employees} />
 //                 {/* <Cards
 //                   data={this.props.data}
 //                   filterText={this.state.filterText}
