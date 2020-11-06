@@ -30,7 +30,7 @@ const Employees = [
     id: 4,
     name: "Targus Lawndoodle",
     image:
-      "https://st3.depositphotos.com/1008939/15644/i/1600/depositphotos_156448924-stock-photo-elegant-man-with-mustache-smiling.jpg",
+      "https://st.depositphotos.com/1757115/4052/i/950/depositphotos_40525477-stock-photo-scary-face-with-cracked-skin.jpg",
     occupation: "Lumberjack",
     email: "iloveturkey@aol.com",
     phone: "508-459-5382",
